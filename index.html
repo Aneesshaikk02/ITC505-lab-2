@@ -35,8 +35,6 @@
             <li><strong>Reliability:</strong> Cloud providers often offer high levels of reliability and redundancy, reducing the risk of data loss or service downtime.</li>
         </ul>
 
-        <!-- Add more sections as needed -->
-
     </article>
 
     <article>
@@ -45,6 +43,16 @@
         <p>During the conversion of this research paper to HTML, I made deliberate choices to use appropriate HTML tags to structure the content. Headings were assigned using the <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, and <code>&lt;strong&gt;</code> tags to maintain a hierarchical structure. Lists were marked up using the <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code> tags for better readability.</p>
 
         <p>The <code>&lt;footer&gt;</code> section includes a script to display the last modified date, providing transparency on when the page was last updated. This choice aims to enhance the user experience and maintain the integrity of information presented on the web page.</p>
+
+        <footer>
+            <p>Last updated: 
+                <span id="lastModified"></span>
+            </p>
+        </footer>
+        <script type="text/javascript">
+            var x = document.lastModified;
+            document.getElementById('lastModified').textContent = x;
+        </script>
     </article>
 
 </body>
